@@ -1,0 +1,45 @@
+name: Task Dashboard App CI/CD
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+# Explicitly define permissions
+permissions:
+  contents: read
+  pull-requests: read
+  checks: write
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238
+      with:
+        node-version: '22'
+        cache: 'npm'
+    
+    - name: Install dependencies
+      run: npm ci
+    
+    - name: Build application (without data hydration)
+      run: npm run build
+      env:
+        VITE_ENABLE_DATA_HYDRATION: 'false'
+    
+    - name: Run tests
+      run: npm test
+
+    # TODO: Add linting steps
+    # - name: Run ESLint
+    #   run: npm run lint
+    #
+    # - name: Run accessibility checks
+    #   run: npm run lint:a11y

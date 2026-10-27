@@ -1,0 +1,106 @@
+{
+  "taskLists": [
+    {
+      "id": "default",
+      "title": "All Tasks",
+      "filters": []
+    },
+    {
+      "id": "ms-build-2025",
+      "title": "Microsoft Build 2025",
+      "filters": [
+        {
+          "type": "tag",
+          "value": "Build"
+        }
+      ]
+    },
+    {
+      "id": "github-universe-2025",
+      "title": "GitHub Universe 2025",
+      "filters": [
+        {
+          "type": "tag",
+          "value": "Universe"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "GitHub",
+    "Microsoft",
+    "Build",
+    "Universe",
+    "Copilot",
+    "Actions",
+    "DevOps",
+    "AI",
+    "Community",
+    "Keynote"
+  ],
+  "tasks": [
+    {
+      "id": 1001,
+      "title": "Attend Day 1 Keynote",
+      "description": "Main conference keynote with major announcements",
+      "isCompleted": false,
+      "tags": ["Microsoft", "Build", "Keynote"]
+    },
+    {
+      "id": 1002,
+      "title": "Attend Day 2 Keynote",
+      "description": "Technical deep dive keynote session",
+      "isCompleted": false,
+      "tags": ["Microsoft", "Build", "Keynote"]
+    },
+    {
+      "id": 1003,
+      "title": "GitHub Copilot Lab",
+      "description": "Try out the latest and greatest features of GitHub Copilot",
+      "isCompleted": false,
+      "tags": ["Microsoft", "Build", "Copilot", "AI", "GitHub"]
+    },
+    {
+      "id": 1004,
+      "title": "Attend GitHub Actions session",
+      "description": "Learn about GitHub Actions improvements and new features",
+      "isCompleted": false,
+      "tags": ["Microsoft", "Build", "GitHub", "Actions"]
+    },
+    {
+      "id": 1005,
+      "title": "Contribute to an open source project (find a good first issue)",
+      "description": "Find a good first issue to work on at the hackathon",
+      "isCompleted": false,
+      "tags": ["Microsoft", "Build", "GitHub", "Community"]
+    },
+    {
+      "id": 2001,
+      "title": "Register for GitHub Universe 2025",
+      "description": "Early bird tickets available soon",
+      "isCompleted": false,
+      "tags": ["GitHub", "Universe"]
+    },
+    {
+      "id": 2002,
+      "title": "Meet with GitHub engineering team",
+      "description": "Schedule office hours with product teams",
+      "isCompleted": false,
+      "tags": ["GitHub", "Universe", "Community"]
+    },
+    {
+      "id": 2003,
+      "title": "Attend GitHub Actions workshop",
+      "description": "Learn about the newest CI/CD features",
+      "isCompleted": false,
+      "tags": ["GitHub", "Universe", "Actions", "DevOps"]
+    },
+    {
+      "id": 2004,
+      "title": "Do some live coding and collab Universe",
+      "description": "Prepare demo and documentation",
+      "isCompleted": false,
+      "tags": ["GitHub", "Universe", "Community"]
+    }
+  ]
+}
